@@ -1,50 +1,24 @@
-export const teams= [
-  {
-    name: "ChillOm",
-    members: [
-      {
-        name: "Adnan",
-        id: 1,
-        status: "participating"
-      },
-      {
-        name: "Om",
-        id: 2,
-        status: "participating"
-      },
-      {
-        name: "Jay",
-        id: 3,
-        status: "participating"
-      },
-      {
-        name: "Harsh",
-        id: 4,
-        status: "participating"
-      }
-    ],
-    difficulty_level: 1
-  },
+export const teams = [
   {
     name: "Kirmada",
     members: [
       {
-        name: "Animesh",
+        name: "Devguru",
         id: 1,
         status: "participating"
       },
       {
-        name: "Harsheet",
+        name: "Animesh",
         id: 2,
         status: "participating"
       },
       {
-        name: "Devguru",
+        name: "Sharavari",
         id: 3,
         status: "participating"
       },
       {
-        name: "Sharvari",
+        name: "Sandesh",
         id: 4,
         status: "participating"
       }
@@ -55,12 +29,12 @@ export const teams= [
     name: "ForceCode",
     members: [
       {
-        name: "Kunal",
+        name: "Soham",
         id: 1,
         status: "participating"
       },
       {
-        name: "Soham",
+        name: "Kunal",
         id: 2,
         status: "participating"
       },
@@ -86,17 +60,17 @@ export const teams= [
         status: "participating"
       },
       {
-        name: "Shruti",
+        name: "Shreya",
         id: 2,
         status: "participating"
       },
       {
-        name: "Shreya",
+        name: "Shruti",
         id: 3,
         status: "participating"
       },
       {
-        name: "Arijeet",
+        name: "Rudra",
         id: 4,
         status: "participating"
       }
@@ -107,17 +81,17 @@ export const teams= [
     name: "Marvinthon",
     members: [
       {
-        name: "Divyansh",
+        name: "Kushagra",
         id: 1,
         status: "participating"
       },
       {
-        name: "Kushagra",
+        name: "Kaustuv",
         id: 2,
         status: "participating"
       },
       {
-        name: "Kaustuv",
+        name: "Divyansh",
         id: 3,
         status: "participating"
       },
@@ -130,7 +104,7 @@ export const teams= [
     difficulty_level: 1
   },
   {
-    name: "The Dominators",
+    name: "The DOMinators",
     members: [
       {
         name: "Abhay",
@@ -156,33 +130,7 @@ export const teams= [
     difficulty_level: 1
   },
   {
-    name: "Tech Titans",
-    members: [
-      {
-        name: "Vivek",
-        id: 1,
-        status: "participating"
-      },
-      {
-        name: "Utkarsh",
-        id: 2,
-        status: "participating"
-      },
-      {
-        name: "Yash",
-        id: 3,
-        status: "participating"
-      },
-      {
-        name: "Palakdeep",
-        id: 4,
-        status: "participating"
-      }
-    ],
-    difficulty_level: 1
-  },
-  {
-    name: "Cheese Burger",
+    name: "CheeseBurger",
     members: [
       {
         name: "Dipesh",
@@ -190,43 +138,17 @@ export const teams= [
         status: "participating"
       },
       {
-        name: "Omkar",
+        name: "Himanshu",
         id: 2,
         status: "participating"
       },
       {
-        name: "Payal",
+        name: "Omkar",
         id: 3,
         status: "participating"
       },
       {
         name: "Roshan",
-        id: 4,
-        status: "participating"
-      }
-    ],
-    difficulty_level: 1
-  },
-  {
-    name: "Survivors A",
-    members: [
-      {
-        name: "Nikhil",
-        id: 1,
-        status: "participating"
-      },
-      {
-        name: "Ricky",
-        id: 2,
-        status: "participating"
-      },
-      {
-        name: "Abhishek",
-        id: 3,
-        status: "participating"
-      },
-      {
-        name: "Dushyant",
         id: 4,
         status: "participating"
       }
@@ -242,17 +164,17 @@ export const teams= [
         status: "participating"
       },
       {
-        name: "Anshuman",
+        name: "Shivadeep",
         id: 2,
         status: "participating"
       },
       {
-        name: "Shivadeep",
+        name: "Ameay",
         id: 3,
         status: "participating"
       },
       {
-        name: "Ameay",
+        name: "Anshumaan",
         id: 4,
         status: "participating"
       }
@@ -273,12 +195,12 @@ export const teams= [
         status: "participating"
       },
       {
-        name: "Sambodhi",
+        name: "Aryan",
         id: 3,
         status: "participating"
       },
       {
-        name: "Aryan",
+        name: "Sambodhi",
         id: 4,
         status: "participating"
       }
@@ -289,26 +211,104 @@ export const teams= [
     name: "Smartinis",
     members: [
       {
-        name: "Gurmeet",
+        name: "Shivaprasad",
         id: 1,
         status: "participating"
       },
       {
-        name: "Shivaprasad",
+        name: "Raveena",
         id: 2,
         status: "participating"
       },
       {
-        name: "Sanskruti",
+        name: "Akash",
         id: 3,
         status: "participating"
       },
       {
-        name: "Akash",
+        name: "Sanskruti",
         id: 4,
         status: "participating"
       }
     ],
     difficulty_level: 1
   },
-]
+  {
+    name: "Zero One",
+    members: [
+      {
+        name: "Abhinav",
+        id: 1,
+        status: "participating"
+      },
+      {
+        name: "Jayant",
+        id: 2,
+        status: "participating"
+      },
+      {
+        name: "Ujjwal",
+        id: 3,
+        status: "participating"
+      },
+      {
+        name: "Krish",
+        id: 4,
+        status: "participating"
+      }
+    ],
+    difficulty_level: 1
+  },
+  {
+    name: "Data Miners",
+    members: [
+      {
+        name: "Shivang",
+        id: 1,
+        status: "participating"
+      },
+      {
+        name: "Anup",
+        id: 2,
+        status: "participating"
+      },
+      {
+        name: "Harshit",
+        id: 3,
+        status: "participating"
+      },
+      {
+        name: "Dipesh",
+        id: 4,
+        status: "participating"
+      }
+    ],
+    difficulty_level: 1
+  },
+  {
+    name: "TechFreak",
+    members: [
+      {
+        name: "Om",
+        id: 1,
+        status: "participating"
+      },
+      {
+        name: "Ayush",
+        id: 2,
+        status: "participating"
+      },
+      {
+        name: "Shubham",
+        id: 3,
+        status: "participating"
+      },
+      {
+        name: "Sanket",
+        id: 4,
+        status: "participating"
+      }
+    ],
+    difficulty_level: 1
+  }
+];
