@@ -129,7 +129,7 @@ const TeamBlock = ({ team, index, handleDifficultyChange, handleToggleMemberStat
       {/* Modal for showing the question and timer */}
       {showModal && (
         <div className="fixed inset-0 bg-gray-900 bg-opacity-95 flex justify-center items-center z-50">
-          <div className="bg-white p-8 rounded-lg shadow-lg max-w-4xl w-full relative text-center">
+          <div className="bg-white p-8 rounded-lg shadow-lg max-w-5xl w-full relative text-center">
             {selectedQuestion && (
               <>
                 {/* Large question text */}
