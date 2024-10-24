@@ -1,0 +1,90 @@
+[
+    {
+        "question": "What will console.log(typeof (() => {})); output in JavaScript?",
+        "answer": "function"
+    },
+    {
+        "question": "What is the purpose of async in JavaScript?",
+        "answer": "Asynchronous functions"
+    },
+    {
+        "question": "What is the output of console.log([2] == [2]); in JavaScript?",
+        "answer": "false"
+    },
+    {
+        "question": "What does the @ symbol denote in Python?",
+        "answer": "Decorator"
+    },
+    {
+        "question": "What is the function of JSON.stringify() in JavaScript?",
+        "answer": "Convert to string"
+    },
+    {
+        "question": "What does Object.freeze() do in JavaScript?",
+        "answer": "Prevent modifications"
+    },
+    {
+        "question": "What is the output of print(1 in {1, 2, 3}) in Python?",
+        "answer": "True"
+    },
+    {
+        "question": "What is the use of let inside a loop in JavaScript?",
+        "answer": "Block scope"
+    },
+    {
+        "question": "What is a nonce in blockchain?",
+        "answer": "Number used once"
+    },
+    {
+        "question": "What is the output of print(type(3.14)) in Python?",
+        "answer": "float"
+    },
+    {
+        "question": "What does the @staticmethod decorator do in Python?",
+        "answer": "No self parameter"
+    },
+    {
+        "question": "What is the output of print(\"abc\".upper()) in Python?",
+        "answer": "ABC"
+    },
+    {
+        "question": "What is a smart contract?",
+        "answer": "Self-executing contract"
+    },
+    {
+        "question": "What is the output of console.log(typeof NaN); in JavaScript?",
+        "answer": "number"
+    },
+    {
+        "question": "What is the purpose of self in Python?",
+        "answer": "Instance reference"
+    },
+    {
+        "question": "What does Math.random() return in JavaScript?",
+        "answer": "Random number"
+    },
+    {
+        "question": "What is a hash in blockchain?",
+        "answer": "Unique identifier"
+    },
+    {
+        "question": "What is the output of print(\"Hello\"[1]) in Python?",
+        "answer": "e"
+    },
+    {
+        "question": "What is the purpose of the pass statement in Python?",
+        "answer": "Placeholder"
+    },
+    {
+        "question": "What is the primary function of a miner in blockchain?",
+        "answer": "Transaction validation"
+    },
+    {
+        "question": "What is the output of console.log(2 == '2'); in JavaScript?",
+        "answer": "true"
+    },
+    {
+        "question": "What is a key feature of a decentralized application (dApp)?",
+        "answer": "No central authority"
+    }
+]

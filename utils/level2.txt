@@ -1,0 +1,105 @@
+What is the output of sizeof(char) in C?
+
+Answer: 1 byte
+Which CSS property is used to change text color?
+
+Answer: color
+In C, what does malloc function return if memory allocation fails?
+
+Answer: NULL
+Which operator in C is used to dereference a pointer?
+
+Answer: *
+What is a dangling pointer in C?
+
+Answer: Pointer to freed memory
+How do you clear floating elements in CSS?
+
+Answer: clear: both
+What is the value of NULL in C?
+
+Answer: 0
+In C, what keyword is used to dynamically allocate memory?
+
+Answer: malloc
+Which CSS property is used to create space inside an element?
+
+Answer: padding
+What is a void pointer in C?
+
+Answer: Pointer with no type
+In C, what is the default value of a global variable?
+
+Answer: 0
+How do you make a background image cover the entire page in CSS?
+
+Answer: background-size: cover
+What does the break statement do in a loop?
+
+Answer: Exits the loop
+What is the CSS selector for an element with id header?
+
+Answer: #header
+What is the time complexity of binary search?
+
+Answer: O(log n)
+Which function is used to free dynamically allocated memory in C?
+
+Answer: free
+In C, what does fopen return if the file cannot be opened?
+
+Answer: NULL
+How do you make a div take the full width of its parent in CSS?
+
+Answer: width: 100%
+In C, what is the output of printf("%d", 'A');?
+
+Answer: 65
+What does the continue statement do in a loop?
+
+Answer: Skips to next iteration
+Which CSS property controls the visibility of an element?
+
+Answer: visibility
+How do you convert a string to an integer in C?
+
+Answer: atoi
+What does the & operator do in C?
+
+Answer: Returns address
+In CSS, what is the default value of the position property?
+
+Answer: static
+How do you align text to the center in CSS?
+
+Answer: text-align: center
+What is the output of printf("%p", (void *)0); in C?
+
+Answer: 0x0
+Which CSS property is used to round the corners of a box?
+
+Answer: border-radius
+In C, what does strcpy do?
+
+Answer: Copies string
+How do you create an infinite loop in C?
+
+Answer: while(1)
+Which CSS property controls the space between lines of text?
+
+Answer: line-height
+In C, what is the output of sizeof(float) on most systems?
+
+Answer: 4 bytes
+What is the difference between inline and block elements in CSS?
+
+Answer: inline doesn't break line
+In C, what does fprintf do?
+
+Answer: Prints to file
+Which CSS property is used to control element shadow?
+
+Answer: box-shadow
+In C, what is the output of 10 << 1?
+
+Answer: 20

@@ -1,0 +1,46 @@
+[
+    {
+        "question": "What is the output of sizeof(char) in C?",
+        "answer": "1 byte"
+    },
+    {
+        "question": "What is a dangling pointer in C?",
+        "answer": "Pointer to freed memory"
+    },
+    {
+        "question": "What is the value of NULL in C?",
+        "answer": "0"
+    },
+    {
+        "question": "What is a void pointer in C?",
+        "answer": "Pointer with no type"
+    },
+    {
+        "question": "What does the break statement do in a loop?",
+        "answer": "Exits the loop"
+    },
+    {
+        "question": "What is the CSS selector for an element with id header?",
+        "answer": "#header"
+    },
+    {
+        "question": "What is the time complexity of binary search?",
+        "answer": "O(log n)"
+    },
+    {
+        "question": "What does the continue statement do in a loop?",
+        "answer": "Skips to next iteration"
+    },
+    {
+        "question": "What does the & operator do in C?",
+        "answer": "Returns address"
+    },
+    {
+        "question": "What is the output of printf(\"%p\", (void *)0); in C?",
+        "answer": "0x0"
+    },
+    {
+        "question": "What is the difference between inline and block elements in CSS?",
+        "answer": "inline doesn't break line"
+    }
+]

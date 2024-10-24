@@ -1,0 +1,70 @@
+[
+    {
+        "question": "What is the standard data type for storing characters in C?",
+        "answer": "char"
+    },
+    {
+        "question": "What keyword is used to define a constant variable in C?",
+        "answer": "const"
+    },
+    {
+        "question": "What is the size of an integer (int) in C on a 32-bit system?",
+        "answer": "4 bytes"
+    },
+    {
+        "question": "What is the result of 5 % 2 in C?",
+        "answer": "1"
+    },
+    {
+        "question": "What is the starting index of an array in C?",
+        "answer": "0"
+    },
+    {
+        "question": "What is the default return type of main() function in C?",
+        "answer": "int"
+    },
+    {
+        "question": "What is the output of printf(\"%d\", 10 > 2); in C?",
+        "answer": "1"
+    },
+    {
+        "question": "What is the full form of HTML?",
+        "answer": "Hypertext Markup Language"
+    },
+    {
+        "question": "What is the escape character for a newline in C?",
+        "answer": "\\n"
+    },
+    {
+        "question": "What does the alt attribute specify in an <img> tag?",
+        "answer": "alternative text"
+    },
+    {
+        "question": "What is the full form of RAM?",
+        "answer": "Random Access Memory"
+    },
+    {
+        "question": "What is the purpose of return in C?",
+        "answer": "Return value to the calling function"
+    },
+    {
+        "question": "What HTML tag is used to add a table row?",
+        "answer": "<tr>"
+    },
+    {
+        "question": "What is the value of true in C?",
+        "answer": "1"
+    },
+    {
+        "question": "What does the void keyword in C indicate about a function?",
+        "answer": "No return value"
+    },
+    {
+        "question": "What tag is used to insert a line break in HTML?",
+        "answer": "<br>"
+    },
+    {
+        "question": "What is the output of 10 / 3 in C if both operands are integers?",
+        "answer": "3"
+    }
+]

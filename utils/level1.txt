@@ -1,0 +1,117 @@
+What is the standard data type for storing characters in C?
+
+Answer: char
+What keyword is used to define a constant variable in C?
+
+Answer: const
+What is the size of an integer (int) in C on a 32-bit system?
+
+Answer: 4 bytes
+Which HTML tag is used to create a hyperlink?
+
+Answer: <a>
+In C, what function is used to print output to the console?
+
+Answer: printf
+Which attribute in HTML is used to specify the destination of a hyperlink?
+
+Answer: href
+In C, which header file is needed for input-output functions like printf and scanf?
+
+Answer: stdio.h
+What is the result of 5 % 2 in C?
+
+Answer: 1
+Which tag is used to create a paragraph in HTML?
+
+Answer: <p>
+In C, what function is used to read input from the user?
+
+Answer: scanf
+Which HTML tag is used to insert an image?
+
+Answer: <img>
+What is the starting index of an array in C?
+
+Answer: 0
+Which loop will execute at least once, even if the condition is false?
+
+Answer: do-while
+Which HTML tag is used for the largest heading?
+
+Answer: <h1>
+What is the default return type of main() function in C?
+
+Answer: int
+Which symbol is used to comment a single line in C?
+
+Answer: //
+In C, how do you declare a pointer variable?
+
+Answer: *
+Which HTML attribute is used to specify an internal link?
+
+Answer: id
+In C, what operator is used to get the address of a variable?
+
+Answer: &
+What is the output of printf("%d", 10 > 2); in C?
+
+Answer: 1
+Which HTML tag is used to create an ordered list?
+
+Answer: <ol>
+What is the full form of HTML?
+
+Answer: Hypertext Markup Language
+Which tag is used to create a dropdown list in HTML?
+
+Answer: <select>
+What is the escape character for a newline in C?
+
+Answer: \n
+Which operator is used for logical AND in C?
+
+Answer: &&
+What does the alt attribute specify in an <img> tag?
+
+Answer: alternative text
+What is the full form of RAM?
+
+Answer: Random Access Memory
+In HTML, which tag is used to create an unordered list?
+
+Answer: <ul>
+What is the purpose of return in C?
+
+Answer: Return value to the calling function
+Which C data type is used to store floating-point numbers?
+
+Answer: float
+What HTML tag is used to add a table row?
+
+Answer: <tr>
+In C, what is the operator for bitwise AND?
+
+Answer: &
+Which tag is used to define a form in HTML?
+
+Answer: <form>
+What is the value of true in C?
+
+Answer: 1
+What does the void keyword in C indicate about a function?
+
+Answer: No return value
+Which attribute is used to uniquely identify an HTML element?
+
+Answer: id
+Which operator is used for addition in C?
+
+Answer: +
+What tag is used to insert a line break in HTML?
+
+Answer: <br>
+What is the output of 10 / 3 in C if both operands are integers?
+
+Answer: 3

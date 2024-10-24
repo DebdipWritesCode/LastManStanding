@@ -1,0 +1,123 @@
+What is the purpose of require in Solidity?
+
+Answer: Error handling
+In TensorFlow, what does tf.keras.layers.Dense() create?
+
+Answer: Fully connected layer
+What does fit() do in Scikit Learn?
+
+Answer: Train model
+In React, what does useEffect handle?
+
+Answer: Side effects
+What is the primary function of web3.js?
+
+Answer: Interact with Ethereum
+In TensorFlow, what does tf.data.Dataset represent?
+
+Answer: Data pipeline
+What is a smart contract?
+
+Answer: Self-executing code
+What does the npm start command do in a MERN app?
+
+Answer: Run server
+What is a token in blockchain?
+
+Answer: Digital asset
+In TensorFlow, what is the purpose of tf.GradientTape?
+
+Answer: Record gradients
+What is the purpose of a nonce in blockchain?
+
+Answer: Proof of work
+What is Redux used for in React applications?
+
+Answer: State management
+What is the output of model.evaluate() in TensorFlow?
+
+Answer: Loss and metrics
+What is the primary purpose of pip in Python?
+
+Answer: Package management
+What does the command git init do?
+
+Answer: Initialize repository
+In Scikit Learn, what is the function of StandardScaler?
+
+Answer: Standardize features
+In TensorFlow, what is model.predict() used for?
+
+Answer: Make predictions
+What is a DAO in Web3?
+
+Answer: Decentralized autonomous organization
+What is the primary purpose of a callback function in Node.js?
+
+Answer: Handle asynchronous operations
+What is the role of a blockchain oracle?
+
+Answer: External data source
+What is axios used for in a MERN stack application?
+
+Answer: HTTP requests
+What does the keyword this refer to in a Solidity contract?
+
+Answer: Current contract
+In TensorFlow, what does tf.keras.Model.compile() do?
+
+Answer: Configure model
+What is the purpose of useState in React?
+
+Answer: State management
+What is geth in Ethereum?
+
+Answer: Go Ethereum client
+What is the primary function of tf.keras.losses.MeanSquaredError()?
+
+Answer: Calculate loss
+What is a stateful component in React?
+
+Answer: Component with state
+What does mapping(address => uint) represent in Solidity?
+
+Answer: Balance mapping
+What is the purpose of a RESTful API?
+
+Answer: Data exchange
+What is Merkle tree used for in blockchain?
+
+Answer: Data integrity
+What does the virtual keyword do in Solidity?
+
+Answer: Overridable function
+In TensorFlow, what does tf.keras.callbacks.EarlyStopping do?
+
+Answer: Stop training early
+What does JSON.stringify() do in JavaScript?
+
+Answer: Convert object to string
+What is the main benefit of using TensorFlow?
+
+Answer: Deep learning
+In React, what does useEffect depend on?
+
+Answer: Dependencies array
+What does tf.keras.layers.Conv2D create?
+
+Answer: 2D convolution layer
+What does blockchain fork mean?
+
+Answer: Protocol change
+What does the res.send() method do in Express?
+
+Answer: Send response
+In Solidity, what is msg.sender?
+
+Answer: Transaction originator
+What is React Router used for?
+
+Answer: Routing in React
+What does tf.keras.optimizers.Adam do?
+
+Answer: Adaptive learning rate

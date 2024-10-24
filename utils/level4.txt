@@ -1,0 +1,111 @@
+What will console.log(typeof (() => {})); output in JavaScript?
+
+Answer: function
+In Python, what is the output of print([1, 2, 3] * 2)?
+
+Answer: [1, 2, 3, 1, 2, 3]
+What is the purpose of async in JavaScript?
+
+Answer: Asynchronous functions
+In Python, what does sum(range(5)) return?
+
+Answer: 10
+In Python, what does str.isdigit() check?
+
+Answer: Numeric string
+What is the output of console.log([2] == [2]); in JavaScript?
+
+Answer: false
+What does the @ symbol denote in Python?
+
+Answer: Decorator
+What is the function of JSON.stringify() in JavaScript?
+
+Answer: Convert to string
+In Python, what is the result of print(bool([]))?
+
+Answer: False
+What does Object.freeze() do in JavaScript?
+
+Answer: Prevent modifications
+What is the output of print(1 in {1, 2, 3}) in Python?
+
+Answer: True
+In Python, what does filter(None, iterable) do?
+
+Answer: Remove falsy values
+What is the use of let inside a loop in JavaScript?
+
+Answer: Block scope
+In Python, how do you read a file?
+
+Answer: open()
+What is a nonce in blockchain?
+
+Answer: Number used once
+In Python, what does set({1, 2, 2}) produce?
+
+Answer: {1, 2}
+What is the output of print(type(3.14)) in Python?
+
+Answer: float
+In JavaScript, what does async function return?
+
+Answer: Promise
+What does the @staticmethod decorator do in Python?
+
+Answer: No self parameter
+In JavaScript, what is the output of console.log(1 + '1');?
+
+Answer: '11'
+What is the output of print("abc".upper()) in Python?
+
+Answer: ABC
+What is a smart contract?
+
+Answer: Self-executing contract
+In Python, what does list.append(x) do?
+
+Answer: Add x to list
+What is the output of console.log(typeof NaN); in JavaScript?
+
+Answer: number
+What is the purpose of self in Python?
+
+Answer: Instance reference
+In JavaScript, what does Object.keys() return?
+
+Answer: Array of keys
+What does Math.random() return in JavaScript?
+
+Answer: Random number
+In Python, how do you create a virtual environment?
+
+Answer: venv
+What is a hash in blockchain?
+
+Answer: Unique identifier
+In JavaScript, what does the bind() method do?
+
+Answer: Set this context
+What is the output of print("Hello"[1]) in Python?
+
+Answer: e
+What is the purpose of the pass statement in Python?
+
+Answer: Placeholder
+In JavaScript, what is the output of console.log(typeof []);?
+
+Answer: object
+What is the primary function of a miner in blockchain?
+
+Answer: Transaction validation
+What is the output of console.log(2 == '2'); in JavaScript?
+
+Answer: true
+What is a key feature of a decentralized application (dApp)?
+
+Answer: No central authority
+In JavaScript, what is the difference between splice() and slice()?
+
+Answer: Modify vs extract

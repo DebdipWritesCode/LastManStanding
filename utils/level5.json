@@ -1,0 +1,126 @@
+[
+    {
+        "question": "What is the purpose of require in Solidity?",
+        "answer": "Error handling"
+    },
+    {
+        "question": "What does fit() do in Scikit Learn?",
+        "answer": "Train model"
+    },
+    {
+        "question": "What is the primary function of web3.js?",
+        "answer": "Interact with Ethereum"
+    },
+    {
+        "question": "What is a smart contract?",
+        "answer": "Self-executing code"
+    },
+    {
+        "question": "What does the npm start command do in a MERN app?",
+        "answer": "Run server"
+    },
+    {
+        "question": "What is a token in blockchain?",
+        "answer": "Digital asset"
+    },
+    {
+        "question": "What is the purpose of a nonce in blockchain?",
+        "answer": "Proof of work"
+    },
+    {
+        "question": "What is Redux used for in React applications?",
+        "answer": "State management"
+    },
+    {
+        "question": "What is the output of model.evaluate() in TensorFlow?",
+        "answer": "Loss and metrics"
+    },
+    {
+        "question": "What is the primary purpose of pip in Python?",
+        "answer": "Package management"
+    },
+    {
+        "question": "What does the command git init do?",
+        "answer": "Initialize repository"
+    },
+    {
+        "question": "What is a DAO in Web3?",
+        "answer": "Decentralized autonomous organization"
+    },
+    {
+        "question": "What is the primary purpose of a callback function in Node.js?",
+        "answer": "Handle asynchronous operations"
+    },
+    {
+        "question": "What is the role of a blockchain oracle?",
+        "answer": "External data source"
+    },
+    {
+        "question": "What is axios used for in a MERN stack application?",
+        "answer": "HTTP requests"
+    },
+    {
+        "question": "What does the keyword this refer to in a Solidity contract?",
+        "answer": "Current contract"
+    },
+    {
+        "question": "What is the purpose of useState in React?",
+        "answer": "State management"
+    },
+    {
+        "question": "What is geth in Ethereum?",
+        "answer": "Go Ethereum client"
+    },
+    {
+        "question": "What is the primary function of tf.keras.losses.MeanSquaredError()?",
+        "answer": "Calculate loss"
+    },
+    {
+        "question": "What is a stateful component in React?",
+        "answer": "Component with state"
+    },
+    {
+        "question": "What does mapping(address => uint) represent in Solidity?",
+        "answer": "Balance mapping"
+    },
+    {
+        "question": "What is the purpose of a RESTful API?",
+        "answer": "Data exchange"
+    },
+    {
+        "question": "What is Merkle tree used for in blockchain?",
+        "answer": "Data integrity"
+    },
+    {
+        "question": "What does the virtual keyword do in Solidity?",
+        "answer": "Overridable function"
+    },
+    {
+        "question": "What does JSON.stringify() do in JavaScript?",
+        "answer": "Convert object to string"
+    },
+    {
+        "question": "What is the main benefit of using TensorFlow?",
+        "answer": "Deep learning"
+    },
+    {
+        "question": "What does tf.keras.layers.Conv2D create?",
+        "answer": "2D convolution layer"
+    },
+    {
+        "question": "What does blockchain fork mean?",
+        "answer": "Protocol change"
+    },
+    {
+        "question": "What does the res.send() method do in Express?",
+        "answer": "Send response"
+    },
+    {
+        "question": "What is React Router used for?",
+        "answer": "Routing in React"
+    },
+    {
+        "question": "What does tf.keras.optimizers.Adam do?",
+        "answer": "Adaptive learning rate"
+    }
+]

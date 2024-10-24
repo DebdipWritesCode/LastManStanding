@@ -1,0 +1,120 @@
+What is the output of console.log(typeof NaN); in JavaScript?
+
+Answer: number
+In Python, how do you get the length of a list my_list?
+
+Answer: len(my_list)
+In C, what is the result of printf("%d", 5 == 5 ? 10 : 20);?
+
+Answer: 10
+What is the difference between let and var in JavaScript?
+
+Answer: Scope
+In Python, what is the result of 3 ** 2?
+
+Answer: 9
+How do you reverse a list in Python?
+
+Answer: my_list[::-1]
+In C, how do you pass an array to a function?
+
+Answer: Pointer
+In Python, what is a tuple?
+
+Answer: Immutable list
+How do you create an arrow function in JavaScript?
+?
+
+Answer: Strict equality
+What is the output of console.log(0.1 + 0.2 === 0.3); in JavaScript?
+
+Answer: false
+In Python, how do you convert a string to an integer?
+
+Answer: int()
+In C, what does return 0 mean in main()?
+
+Answer: Successful execution
+In Python, what is the result of 5 // 2?
+
+Answer: 2
+What is the purpose of setTimeout in JavaScript?
+
+Answer: Delay function execution
+In Python, how do you get the keys of a dictionary?
+
+Answer: dict.keys()
+What is the difference between == and === in JavaScript?
+
+Answer: Loose vs strict equality
+What is the output of console.log(null == undefined); in JavaScript?
+
+Answer: true
+In Python, how do you concatenate two lists?
+
+Answer: +
+In C, what is the return type of strcmp?
+
+Answer: int
+What is an IIFE in JavaScript?
+
+Answer: Immediately invoked function
+What does the typeof operator return for an array in JavaScript?
+
+Answer: object
+In Python, what is the result of print(bool(""))?
+
+Answer: False
+In C, how do you declare a pointer to an integer?
+
+Answer: int *ptr;
+What is the use of Array.map() in JavaScript?
+
+Answer: Creates new array
+In Python, what is the difference between is and ==?
+
+Answer: Identity vs equality
+What is the output of console.log([1, 2] + [3, 4]); in JavaScript?
+
+Answer: 1,23,4
+In Python, what does len({1: 'a', 2: 'b'}) return?
+
+Answer: 2
+In C, what does *(ptr + 1) access?
+
+Answer: Next memory location
+How do you remove the last element from an array in JavaScript?
+
+Answer: pop()
+What is the output of typeof null in JavaScript?
+
+Answer: object
+In Python, how do you check if a value exists in a list?
+
+Answer: in
+What is the output of console.log([] == []); in JavaScript?
+
+Answer: false
+In Python, how do you import a specific function from a module?
+
+Answer: from module import function
+In C, what is the size of a pointer on a 64-bit system?
+
+Answer: 8 bytes
+What does Array.filter() do in JavaScript?
+
+Answer: Filters array elements
+In Python, what does my_list[1:3] return?
+
+Answer: Slice
+In C, what is the output of printf("%d", 7 & 3);?
+
+Answer: 3
+In JavaScript, how do you check if a variable is an array?
+
+Answer: Array.isArray()
+
+Answer: () => {}
+What is the output of print(type(None)) in Python?
+
+Answer: NoneType
