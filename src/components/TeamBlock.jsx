@@ -88,9 +88,9 @@ const TeamBlock = ({ team, index, handleDifficultyChange, handleToggleMemberStat
   return (
     <div className="p-4 border rounded-lg shadow-md mb-4" key={index}>
       <h3 className="text-lg font-bold">{team.name}</h3>
-      <p>Current level: {team.difficulty_level}</p>
+      <p className='font-bold'>Current level: {team.difficulty_level}</p>
 
-      <div>
+      <div className='font-bold'>
         {team.members.map((member, memberIndex) => (
           <div
             key={memberIndex}

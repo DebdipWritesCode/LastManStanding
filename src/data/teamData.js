@@ -237,22 +237,22 @@ export const teams = [
     name: "Zero One",
     members: [
       {
-        name: "Abhinav",
+        name: "Nikhil",
         id: 1,
         status: "participating"
       },
       {
-        name: "Jayant",
+        name: "Abhishek",
         id: 2,
         status: "participating"
       },
       {
-        name: "Ujjwal",
+        name: "Ricky",
         id: 3,
         status: "participating"
       },
       {
-        name: "Krish",
+        name: "Dushyant",
         id: 4,
         status: "participating"
       }
