@@ -1,58 +1,72 @@
 [
     {
         "question": "What is the output of console.log(typeof NaN); in JavaScript?",
-        "answer": "number"
+        "answer": "number",
+        "id": 1
     },
     {
         "question": "What is the difference between let and var in JavaScript?",
-        "answer": "Scope"
+        "answer": "Scope",
+        "id": 2
     },
     {
         "question": "What is the output of console.log(0.1 + 0.2 === 0.3); in JavaScript?",
-        "answer": "false"
+        "answer": "false",
+        "id": 3
     },
     {
         "question": "What is the purpose of setTimeout in JavaScript?",
-        "answer": "Delay function execution"
+        "answer": "Delay function execution",
+        "id": 4
     },
     {
         "question": "What is the difference between == and === in JavaScript?",
-        "answer": "Loose vs strict equality"
+        "answer": "Loose vs strict equality",
+        "id": 5
     },
     {
         "question": "What is the output of console.log(null == undefined); in JavaScript?",
-        "answer": "true"
+        "answer": "true",
+        "id": 6
     },
     {
         "question": "What is an IIFE in JavaScript?",
-        "answer": "Immediately invoked function"
+        "answer": "Immediately invoked function",
+        "id": 7
     },
     {
         "question": "What does the typeof operator return for an array in JavaScript?",
-        "answer": "object"
+        "answer": "object",
+        "id": 8
     },
     {
         "question": "What is the use of Array.map() in JavaScript?",
-        "answer": "Creates new array"
+        "answer": "Creates new array",
+        "id": 9
     },
     {
         "question": "What is the output of console.log([1, 2] + [3, 4]); in JavaScript?",
-        "answer": "1,23,4"
+        "answer": "1,23,4",
+        "id": 10
     },
     {
         "question": "What is the output of typeof null in JavaScript?",
-        "answer": "object"
+        "answer": "object",
+        "id": 11
     },
     {
         "question": "What is the output of console.log([] == []); in JavaScript?",
-        "answer": "false"
+        "answer": "false",
+        "id": 12
     },
     {
         "question": "What does Array.filter() do in JavaScript?",
-        "answer": "Filters array elements"
+        "answer": "Filters array elements",
+        "id": 13
     },
     {
         "question": "What is the output of print(type(None)) in Python?",
-        "answer": "NoneType"
+        "answer": "NoneType",
+        "id": 14
     }
 ]

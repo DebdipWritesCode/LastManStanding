@@ -1,90 +1,112 @@
 [
     {
         "question": "What will console.log(typeof (() => {})); output in JavaScript?",
-        "answer": "function"
+        "answer": "function",
+        "id": 1
     },
     {
         "question": "What is the purpose of async in JavaScript?",
-        "answer": "Asynchronous functions"
+        "answer": "Asynchronous functions",
+        "id": 2
     },
     {
         "question": "What is the output of console.log([2] == [2]); in JavaScript?",
-        "answer": "false"
+        "answer": "false",
+        "id": 3
     },
     {
         "question": "What does the @ symbol denote in Python?",
-        "answer": "Decorator"
+        "answer": "Decorator",
+        "id": 4
     },
     {
         "question": "What is the function of JSON.stringify() in JavaScript?",
-        "answer": "Convert to string"
+        "answer": "Convert to string",
+        "id": 5
     },
     {
         "question": "What does Object.freeze() do in JavaScript?",
-        "answer": "Prevent modifications"
+        "answer": "Prevent modifications",
+        "id": 6
     },
     {
         "question": "What is the output of print(1 in {1, 2, 3}) in Python?",
-        "answer": "True"
+        "answer": "True",
+        "id": 7
     },
     {
         "question": "What is the use of let inside a loop in JavaScript?",
-        "answer": "Block scope"
+        "answer": "Block scope",
+        "id": 8
     },
     {
         "question": "What is a nonce in blockchain?",
-        "answer": "Number used once"
+        "answer": "Number used once",
+        "id": 9
     },
     {
         "question": "What is the output of print(type(3.14)) in Python?",
-        "answer": "float"
+        "answer": "float",
+        "id": 10
     },
     {
         "question": "What does the @staticmethod decorator do in Python?",
-        "answer": "No self parameter"
+        "answer": "No self parameter",
+        "id": 11
     },
     {
         "question": "What is the output of print(\"abc\".upper()) in Python?",
-        "answer": "ABC"
+        "answer": "ABC",
+        "id": 12
     },
     {
         "question": "What is a smart contract?",
-        "answer": "Self-executing contract"
+        "answer": "Self-executing contract",
+        "id": 13
     },
     {
         "question": "What is the output of console.log(typeof NaN); in JavaScript?",
-        "answer": "number"
+        "answer": "number",
+        "id": 14
     },
     {
         "question": "What is the purpose of self in Python?",
-        "answer": "Instance reference"
+        "answer": "Instance reference",
+        "id": 15
     },
     {
         "question": "What does Math.random() return in JavaScript?",
-        "answer": "Random number"
+        "answer": "Random number",
+        "id": 16
     },
     {
         "question": "What is a hash in blockchain?",
-        "answer": "Unique identifier"
+        "answer": "Unique identifier",
+        "id": 17
     },
     {
         "question": "What is the output of print(\"Hello\"[1]) in Python?",
-        "answer": "e"
+        "answer": "e",
+        "id": 18
     },
     {
         "question": "What is the purpose of the pass statement in Python?",
-        "answer": "Placeholder"
+        "answer": "Placeholder",
+        "id": 19
     },
     {
         "question": "What is the primary function of a miner in blockchain?",
-        "answer": "Transaction validation"
+        "answer": "Transaction validation",
+        "id": 20
     },
     {
         "question": "What is the output of console.log(2 == '2'); in JavaScript?",
-        "answer": "true"
+        "answer": "true",
+        "id": 21
     },
     {
         "question": "What is a key feature of a decentralized application (dApp)?",
-        "answer": "No central authority"
+        "answer": "No central authority",
+        "id": 22
     }
 ]

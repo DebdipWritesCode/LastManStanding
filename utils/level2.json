@@ -1,46 +1,57 @@
 [
     {
         "question": "What is the output of sizeof(char) in C?",
-        "answer": "1 byte"
+        "answer": "1 byte",
+        "id": 1
     },
     {
         "question": "What is a dangling pointer in C?",
-        "answer": "Pointer to freed memory"
+        "answer": "Pointer to freed memory",
+        "id": 2
     },
     {
         "question": "What is the value of NULL in C?",
-        "answer": "0"
+        "answer": "0",
+        "id": 3
     },
     {
         "question": "What is a void pointer in C?",
-        "answer": "Pointer with no type"
+        "answer": "Pointer with no type",
+        "id": 4
     },
     {
         "question": "What does the break statement do in a loop?",
-        "answer": "Exits the loop"
+        "answer": "Exits the loop",
+        "id": 5
     },
     {
         "question": "What is the CSS selector for an element with id header?",
-        "answer": "#header"
+        "answer": "#header",
+        "id": 6
     },
     {
         "question": "What is the time complexity of binary search?",
-        "answer": "O(log n)"
+        "answer": "O(log n)",
+        "id": 7
     },
     {
         "question": "What does the continue statement do in a loop?",
-        "answer": "Skips to next iteration"
+        "answer": "Skips to next iteration",
+        "id": 8
     },
     {
         "question": "What does the & operator do in C?",
-        "answer": "Returns address"
+        "answer": "Returns address",
+        "id": 9
     },
     {
         "question": "What is the output of printf(\"%p\", (void *)0); in C?",
-        "answer": "0x0"
+        "answer": "0x0",
+        "id": 10
     },
     {
         "question": "What is the difference between inline and block elements in CSS?",
-        "answer": "inline doesn't break line"
+        "answer": "inline doesn't break line",
+        "id": 11
     }
 ]

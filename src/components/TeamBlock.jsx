@@ -39,7 +39,8 @@ const TeamBlock = ({ team, index, handleDifficultyChange, handleToggleMemberStat
         break;
     }
 
-    const availableQuestions = questionsToSelectFrom.filter(q => !questionsArray.includes(q));
+    const usedQuestionIds = new Set(questionsArray.map(q => q.id));
+    const availableQuestions = questionsToSelectFrom.filter(q => !usedQuestionIds.has(q.id));    
 
     if (availableQuestions.length > 0) {
       const randomIndex = Math.floor(Math.random() * availableQuestions.length);
