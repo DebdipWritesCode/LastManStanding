@@ -1,8 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { level1Ques, level2Ques, level3Ques, level4Ques, level5Ques } from '../data/quesData'; // Import question data
+import RouletteModal from './RouletteModal';
 
 const TeamBlock = ({ team, index, handleDifficultyChange, handleToggleMemberStatus }) => {
   const [showModal, setShowModal] = useState(false); // Control modal visibility
+  const [rouletteModal, setRouletteModal] = useState(false); // Control roulette modal visibility
+  const [rouletteModalData, setRouletteModalData] = useState([]); // Data for roulette modal
   const [selectedQuestion, setSelectedQuestion] = useState(null); // Track the selected question
   const [timeLeft, setTimeLeft] = useState(null); // Timer state
   const [showAnswer, setShowAnswer] = useState(false); // Show answer after timer ends
@@ -74,6 +77,16 @@ const TeamBlock = ({ team, index, handleDifficultyChange, handleToggleMemberStat
     setShowAnswer(true); // Show the answer immediately
   };
 
+  const handleRouletteModal = (members) => {
+    const filteredMembers = members.filter(member => member.status === 'participating');
+    if (filteredMembers.length === 0) {
+      alert('No members available for roulette.');
+      return;
+    }
+    setRouletteModalData(filteredMembers); // Set modal data
+    setRouletteModal(true);        // Show roulette modal
+  };  
+
   // Timer logic
   useEffect(() => {
     if (isTimerStarted && timeLeft === 0) {
@@ -118,14 +131,26 @@ const TeamBlock = ({ team, index, handleDifficultyChange, handleToggleMemberStat
         </button>
       </div>
 
-      <div className="flex w-full justify-center">
+      <div className="flex w-full justify-around">
         <button
           className="mt-4 px-4 py-2 bg-yellow-500 text-white rounded"
           onClick={handleSelectQuestion}
         >
           Get Question
         </button>
+        <button
+          className="mt-4 px-4 py-2 bg-yellow-500 text-white rounded"
+          onClick={() => handleRouletteModal(team.members)}
+        >
+          Spin the Wheel
+        </button>
       </div>
+
+      {
+        rouletteModal && (
+          <RouletteModal setRouletteModal={setRouletteModal} data={rouletteModalData} />
+        )
+      }
 
       {/* Modal for showing the question and timer */}
       {showModal && (
