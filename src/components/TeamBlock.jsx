@@ -1,17 +1,19 @@
-import React, { useState, useEffect } from 'react';
-import { level1Ques, level2Ques, level3Ques, level4Ques, level5Ques } from '../data/quesData'; // Import question data
+import React, { useState, useEffect, useRef } from 'react';
+import { level1Ques, level2Ques, level3Ques, level4Ques, level5Ques } from '../data/quesData';
 import RouletteModal from './RouletteModal';
 
 const TeamBlock = ({ team, index, handleDifficultyChange, handleToggleMemberStatus }) => {
-  const [showModal, setShowModal] = useState(false); // Control modal visibility
-  const [rouletteModal, setRouletteModal] = useState(false); // Control roulette modal visibility
-  const [rouletteModalData, setRouletteModalData] = useState([]); // Data for roulette modal
-  const [selectedQuestion, setSelectedQuestion] = useState(null); // Track the selected question
-  const [timeLeft, setTimeLeft] = useState(null); // Timer state
-  const [showAnswer, setShowAnswer] = useState(false); // Show answer after timer ends
-  const [isTimerStarted, setIsTimerStarted] = useState(false); // Track if timer has started
+  const [showModal, setShowModal] = useState(false);
+  const [rouletteModal, setRouletteModal] = useState(false);
+  const [rouletteModalData, setRouletteModalData] = useState([]);
+  const [selectedQuestion, setSelectedQuestion] = useState(null);
+  const [timeLeft, setTimeLeft] = useState(null);
+  const [showAnswer, setShowAnswer] = useState(false);
+  const [isTimerStarted, setIsTimerStarted] = useState(false);
+  const [isPaused, setIsPaused] = useState(false);
 
-  // Initialize questions from localStorage or default to an empty object
+  const timerRef = useRef(null);
+
   const getQuestionsFromLocalStorage = () => {
     const storedQuestions = localStorage.getItem(`level${team.difficulty_level}Ques`);
     return storedQuestions ? JSON.parse(storedQuestions) : [];
@@ -19,7 +21,6 @@ const TeamBlock = ({ team, index, handleDifficultyChange, handleToggleMemberStat
 
   const [questionsArray, setQuestionsArray] = useState(getQuestionsFromLocalStorage());
 
-  // Select a random question based on team's current difficulty level
   const handleSelectQuestion = () => {
     let questionsToSelectFrom = [];
     switch (team.difficulty_level) {
@@ -43,38 +44,60 @@ const TeamBlock = ({ team, index, handleDifficultyChange, handleToggleMemberStat
     }
 
     const usedQuestionIds = new Set(questionsArray.map(q => q.id));
-    const availableQuestions = questionsToSelectFrom.filter(q => !usedQuestionIds.has(q.id));    
+    const availableQuestions = questionsToSelectFrom.filter(q => !usedQuestionIds.has(q.id));
 
     if (availableQuestions.length > 0) {
       const randomIndex = Math.floor(Math.random() * availableQuestions.length);
       setSelectedQuestion(availableQuestions[randomIndex]);
       setShowModal(true);
-      setTimeLeft(null); // Reset timer
-      setShowAnswer(false); // Hide answer initially
-      setIsTimerStarted(false); // Timer has not started yet
+      setTimeLeft(null);
+      setShowAnswer(false);
+      setIsTimerStarted(false);
     } else {
       alert('No more questions available for this level.');
     }
   };
 
-  // Start the timer
+  const startInterval = () => {
+    timerRef.current = setInterval(() => {
+      setTimeLeft(prev => {
+        if (prev <= 1) {
+          clearInterval(timerRef.current);
+          setShowAnswer(true);
+          setIsTimerStarted(false);
+          return 0;
+        }
+        return prev - 1;
+      });
+    }, 1000);
+  };
+
   const handleStartTimer = () => {
     setIsTimerStarted(true);
-    setTimeLeft(20); // Set timer to 20 seconds
+    setTimeLeft(15);
+    setIsPaused(false);
+    startInterval();
 
-    // Remove the selected question from the available questions
     const updatedQuestionsArray = [...questionsArray, selectedQuestion];
     setQuestionsArray(updatedQuestionsArray);
-
-    // Store the updated questions in localStorage
     localStorage.setItem(`level${team.difficulty_level}Ques`, JSON.stringify(updatedQuestionsArray));
   };
 
-  // End the timer and show the answer immediately
+  const handlePauseTimer = () => {
+    setIsPaused(true);
+    clearInterval(timerRef.current);
+  };
+
+  const handleResumeTimer = () => {
+    setIsPaused(false);
+    startInterval();
+  };
+
   const handleEndTimer = () => {
     setIsTimerStarted(false);
-    setTimeLeft(0); // Reset timer to 0
-    setShowAnswer(true); // Show the answer immediately
+    clearInterval(timerRef.current);
+    setTimeLeft(0);
+    setShowAnswer(true);
   };
 
   const handleRouletteModal = (members) => {
@@ -83,21 +106,13 @@ const TeamBlock = ({ team, index, handleDifficultyChange, handleToggleMemberStat
       alert('No members available for roulette.');
       return;
     }
-    setRouletteModalData(filteredMembers); // Set modal data
-    setRouletteModal(true);        // Show roulette modal
-  };  
+    setRouletteModalData(filteredMembers);
+    setRouletteModal(true);
+  };
 
-  // Timer logic
   useEffect(() => {
-    if (isTimerStarted && timeLeft === 0) {
-      setShowAnswer(true); // Show answer when the timer ends
-    }
-
-    if (isTimerStarted && timeLeft > 0) {
-      const timer = setTimeout(() => setTimeLeft(timeLeft - 1), 1000);
-      return () => clearTimeout(timer);
-    }
-  }, [timeLeft, isTimerStarted]);
+    return () => clearInterval(timerRef.current); // Cleanup on unmount
+  }, []);
 
   return (
     <div className="p-4 border rounded-lg shadow-md mb-4" key={index}>
@@ -146,23 +161,18 @@ const TeamBlock = ({ team, index, handleDifficultyChange, handleToggleMemberStat
         </button>
       </div>
 
-      {
-        rouletteModal && (
-          <RouletteModal setRouletteModal={setRouletteModal} data={rouletteModalData} />
-        )
-      }
+      {rouletteModal && (
+        <RouletteModal setRouletteModal={setRouletteModal} data={rouletteModalData} />
+      )}
 
-      {/* Modal for showing the question and timer */}
       {showModal && (
         <div className="fixed inset-0 bg-gray-900 bg-opacity-95 flex justify-center items-center z-50">
           <div className="bg-white p-8 rounded-lg shadow-lg max-w-5xl w-full relative text-center">
             {selectedQuestion && (
               <>
-                {/* Large question text */}
                 <h3 className="text-4xl font-bold mb-8">Question:</h3>
                 <p className="text-[50px] mb-12">{selectedQuestion.question}</p>
 
-                {/* Show Start Timer button initially */}
                 {!isTimerStarted && (
                   <div className="flex justify-center">
                     <button
@@ -174,14 +184,23 @@ const TeamBlock = ({ team, index, handleDifficultyChange, handleToggleMemberStat
                   </div>
                 )}
 
-                {/* Timer display */}
                 {isTimerStarted && (
                   <div className="text-center mt-6">
                     <p className="text-6xl font-bold">Time Left: {timeLeft} seconds</p>
                   </div>
                 )}
 
-                {/* Display answer when the timer ends */}
+                {isTimerStarted && (
+                  <div className="flex justify-center mt-4 space-x-4">
+                    <button
+                      className={`px-8 py-4 ${isPaused ? 'bg-yellow-500' : 'bg-blue-500'} text-white rounded text-2xl`}
+                      onClick={isPaused ? handleResumeTimer : handlePauseTimer}
+                    >
+                      {isPaused ? 'Resume Timer' : 'Pause Timer'}
+                    </button>
+                  </div>
+                )}
+
                 {showAnswer && (
                   <div className="mt-12">
                     <h4 className="text-3xl font-bold">Answer:</h4>
@@ -189,7 +208,6 @@ const TeamBlock = ({ team, index, handleDifficultyChange, handleToggleMemberStat
                   </div>
                 )}
 
-                {/* End Timer Button */}
                 {isTimerStarted && (
                   <div className="flex justify-center mt-6">
                     <button
@@ -201,10 +219,12 @@ const TeamBlock = ({ team, index, handleDifficultyChange, handleToggleMemberStat
                   </div>
                 )}
 
-                {/* Close button */}
                 <button
                   className="absolute top-4 right-4 px-6 py-3 bg-red-500 text-white rounded text-lg"
-                  onClick={() => setShowModal(false)}
+                  onClick={() => {
+                    clearInterval(timerRef.current);
+                    setShowModal(false);
+                  }}
                 >
                   Close
                 </button>
