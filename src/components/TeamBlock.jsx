@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { level1Ques, level2Ques, level3Ques, level4Ques, level5Ques } from '../data/quesData';
 import RouletteModal from './RouletteModal';
+import { FaHeart } from "react-icons/fa";
 
 const TeamBlock = ({ team, index, handleDifficultyChange, handleToggleMemberStatus }) => {
   const [showModal, setShowModal] = useState(false);
@@ -11,6 +12,7 @@ const TeamBlock = ({ team, index, handleDifficultyChange, handleToggleMemberStat
   const [showAnswer, setShowAnswer] = useState(false);
   const [isTimerStarted, setIsTimerStarted] = useState(false);
   const [isPaused, setIsPaused] = useState(false);
+  const [isLifelineUsed, setIsLifelineUsed] = useState(false);
 
   const timerRef = useRef(null);
 
@@ -93,6 +95,10 @@ const TeamBlock = ({ team, index, handleDifficultyChange, handleToggleMemberStat
     startInterval();
   };
 
+  const toogleLifeline = () => {
+    setIsLifelineUsed((prev) => !prev);
+  };
+
   const handleEndTimer = () => {
     setIsTimerStarted(false);
     clearInterval(timerRef.current);
@@ -116,8 +122,13 @@ const TeamBlock = ({ team, index, handleDifficultyChange, handleToggleMemberStat
 
   return (
     <div className="p-4 border rounded-lg shadow-md mb-4" key={index}>
-      <h3 className="text-2xl font-bold">{team.name}</h3>
-      <p className='font-bold'>Current level: {team.difficulty_level}</p>
+      <div className="flex items-center justify-between">
+        <h3 className="text-2xl font-bold">{team.name}</h3>
+        <button onClick={toogleLifeline} className="focus:outline-none">
+          <FaHeart className={`text-2xl ${!isLifelineUsed ? "text-red-500" : "text-gray-400"}`} />
+        </button>
+      </div>
+      <p className="font-bold">Current level: {team.difficulty_level}</p>
 
       <div className='font-bold text-xl'>
         {team.members.map((member, memberIndex) => (
